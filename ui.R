@@ -1,7 +1,7 @@
 library(shiny)
 
 shinyUI(pageWithSidebar(
-  headerPanel("Body Mass Index calculator"),
+  headerPanel("Body Mass Index Calculator"),
   sidebarPanel(
     numericInput('wt', 'Your weight:', 0, min = 0, max = 100000, step = 0.01),
     selectInput("wtunit", "in", choices = c("kilograms", "pounds", "bags of cement", "m&m candies"), selected="kilograms"),
